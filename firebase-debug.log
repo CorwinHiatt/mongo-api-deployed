@@ -660,3 +660,44 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-10-20T19:27:06.975Z] shutdown requested via /__/quitquitquit
 
 [info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T19:28:56.869Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T19:28:57.871Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T19:28:58.571Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T19:28:58.571Z] Building nodejs source
+[debug] [2022-10-20T19:28:58.571Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T19:28:58.572Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T19:28:58.663Z] Serving at port 9005
+
+[debug] [2022-10-20T19:28:58.847Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T19:28:58.849Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}

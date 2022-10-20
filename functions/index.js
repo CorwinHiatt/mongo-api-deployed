@@ -6,7 +6,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.get('/fruniture', (req, res) => res.send(' comming soon...'))
+app.get('/furniture', (req, res) => res.send(' comming soon...'))
 
 export const api = functions.https.onRequest(app)
 

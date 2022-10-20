@@ -34,5 +34,5 @@ export async function updateFurniture(req, res) {
         res.status(500).send(err)
         return
     })
-    res.status201.send({message: 'Furniture Updated'})
+    res.status(202).send({message: 'Furniture Updated'})
 }

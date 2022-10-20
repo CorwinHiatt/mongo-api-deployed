@@ -9,3 +9,15 @@ export async function getAllFurniture(req, res) {
         })
     res.send(collection)
 }
+
+export async function addNewFurniture(req, res) {
+    const {brand, type, condition} = req.body
+    const newFurniture = {brand, type, condition }
+    const db = dbConnect()
+    await db.collection('furniture').insertOne(newFurniture)
+    .catch(err=> {
+        res.status(500).send(err)
+    })
+    res.status(201).send({message: 'Furniture added'})
+    
+}

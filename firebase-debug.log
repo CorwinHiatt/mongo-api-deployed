@@ -448,3 +448,215 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-10-20T18:52:38.119Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 200
 [debug] [2022-10-20T18:52:38.119Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
 [info] i  hosting: 127.0.0.1 - - [20/Oct/2022:18:52:38 +0000] "GET /furniture HTTP/1.1" 200 180 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:18:52:38 +0000] \"GET /furniture HTTP/1.1\" 200 180 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-20T18:58:10.469Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T18:58:11.475Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T18:58:12.244Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T18:58:12.244Z] Building nodejs source
+[debug] [2022-10-20T18:58:12.244Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T18:58:12.245Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T18:58:12.342Z] Serving at port 9005
+
+[debug] [2022-10-20T18:58:12.527Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T18:58:12.529Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T18:58:12.532Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-10-20T18:58:12.532Z] [worker-us-central1-api-3eeed2be-c0ef-48be-8ffd-af0782c48afc]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-3eeed2be-c0ef-48be-8ffd-af0782c48afc]: FINISHING"}}
+[debug] [2022-10-20T18:58:12.537Z] [worker-us-central1-api-3eeed2be-c0ef-48be-8ffd-af0782c48afc]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-3eeed2be-c0ef-48be-8ffd-af0782c48afc]: exited"}}
+[debug] [2022-10-20T18:58:12.537Z] [worker-us-central1-api-3eeed2be-c0ef-48be-8ffd-af0782c48afc]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-3eeed2be-c0ef-48be-8ffd-af0782c48afc]: FINISHED"}}
+[debug] [2022-10-20T19:03:52.517Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T19:03:53.526Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T19:03:54.207Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T19:03:54.207Z] Building nodejs source
+[debug] [2022-10-20T19:03:54.207Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T19:03:54.208Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T19:03:54.295Z] Serving at port 9005
+
+[debug] [2022-10-20T19:03:54.493Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T19:03:54.495Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T19:12:15.940Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T19:12:16.949Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T19:12:17.720Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T19:12:17.720Z] Building nodejs source
+[debug] [2022-10-20T19:12:17.720Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T19:12:17.721Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T19:12:17.817Z] Serving at port 9005
+
+[debug] [2022-10-20T19:12:18.005Z] Got response from /__/functions.yaml Failed to generate manifest from function source: ReferenceError: a is not defined
+[debug] [2022-10-20T19:12:18.006Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:
+     ...  function source: ReferenceError: a is not defined
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: ReferenceError: a is not defined\n\u0000","position":64,"line":0,"column":64},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 65:\n     ...  function source: ReferenceError: a is not defined\n                                         ^"}
+[debug] [2022-10-20T19:12:18.007Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: a is not defined {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: ReferenceError: a is not defined"}}
+[debug] [2022-10-20T19:14:36.566Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T19:14:37.575Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T19:14:38.276Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T19:14:38.276Z] Building nodejs source
+[debug] [2022-10-20T19:14:38.276Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T19:14:38.277Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T19:14:38.368Z] Serving at port 9005
+
+[debug] [2022-10-20T19:14:38.553Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T19:14:38.555Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T19:27:04.784Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T19:27:05.791Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T19:27:06.572Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T19:27:06.572Z] Building nodejs source
+[debug] [2022-10-20T19:27:06.572Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T19:27:06.573Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T19:27:06.673Z] Serving at port 9005
+
+[debug] [2022-10-20T19:27:06.973Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T19:27:06.975Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}

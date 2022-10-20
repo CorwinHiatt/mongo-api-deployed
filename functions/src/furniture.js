@@ -8,6 +8,7 @@ export async function getAllFurniture(req, res) {
             res.status(500).send(err)
             return
         })
+        res.set('cache-control' , 'public, max-age=300, s-maxage=600')
     res.send(collection)
 }
 

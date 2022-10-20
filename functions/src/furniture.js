@@ -15,11 +15,22 @@ export async function addNewFurniture(req, res) {
     const newFurniture = {brand, type, condition }
     const db = dbConnect()
     await db.collection('furniture').insertOne(newFurniture)
-    .catch(err=> {
+    .catch(err => {
         res.status(500).send(err)
         return
     })
     
     res.status(201).send({message: 'Furniture added'})
     
+}
+
+export async function updateFurniture(req, res) {
+    const { furnitureId } = req.params
+    const db = dbConnect()
+    await db.collection('furniture').updateOne(furnitureId)
+    .catch(err => {
+        res.status(500).send(err)
+        return
+    })
+    res.status201.send({message: 'Furniture Updated'})
 }

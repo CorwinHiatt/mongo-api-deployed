@@ -983,3 +983,48 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-10-20T20:14:15.283Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e 404
 [debug] [2022-10-20T20:14:15.283Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e [stream]
 [info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:14:15 +0000] "PATCH /furniture/6351a2f025ae7aed4642c33e HTTP/1.1" 404 175 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:14:15 +0000] \"PATCH /furniture/6351a2f025ae7aed4642c33e HTTP/1.1\" 404 175 \"-\" \"PostmanRuntime/7.29.2\""}}
+[debug] [2022-10-20T20:17:16.583Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-20T20:17:17.587Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T20:17:18.291Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T20:17:18.291Z] Building nodejs source
+[debug] [2022-10-20T20:17:18.291Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T20:17:18.292Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T20:17:18.384Z] Serving at port 9005
+
+[debug] [2022-10-20T20:17:18.577Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T20:17:18.579Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T20:17:18.583Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-10-20T20:17:18.583Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: FINISHING"}}
+[debug] [2022-10-20T20:17:18.586Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: exited"}}
+[debug] [2022-10-20T20:17:18.586Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: FINISHED"}}

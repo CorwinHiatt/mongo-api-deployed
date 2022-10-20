@@ -125,3 +125,121 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-10-20T18:28:57.552Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 404
 [debug] [2022-10-20T18:28:57.552Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
 [info] i  hosting: 127.0.0.1 - - [20/Oct/2022:18:28:57 +0000] "GET /furniture HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:18:28:57 +0000] \"GET /furniture HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-20T18:30:14.131Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T18:30:15.136Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T18:30:15.790Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T18:30:15.790Z] Building nodejs source
+[debug] [2022-10-20T18:30:15.790Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T18:30:15.790Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T18:30:15.875Z] Serving at port 9005
+
+[debug] [2022-10-20T18:30:15.880Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module
+[debug] [2022-10-20T18:30:15.880Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Cannot use import statement ou ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Cannot use import statement ou ... \n                                         ^"}
+[debug] [2022-10-20T18:30:15.882Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module"}}
+[info] [hosting] Rewriting /furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T18:34:55.310Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 
+[debug] [2022-10-20T18:34:55.313Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T18:34:55.314Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T18:34:55.315Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-20T18:34:55.316Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 404
+[debug] [2022-10-20T18:34:55.316Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:18:34:55 +0000] "GET /furniture HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:18:34:55 +0000] \"GET /furniture HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting //furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T18:35:02.802Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api//furniture 
+[debug] [2022-10-20T18:35:02.804Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T18:35:02.804Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T18:35:02.804Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-20T18:35:02.805Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api//furniture 404
+[debug] [2022-10-20T18:35:02.805Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api//furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:18:35:02 +0000] "GET //furniture HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:18:35:02 +0000] \"GET //furniture HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T18:35:11.907Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 
+[debug] [2022-10-20T18:35:11.908Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T18:35:11.908Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T18:35:11.909Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-20T18:35:11.910Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 404
+[debug] [2022-10-20T18:35:11.910Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:18:35:11 +0000] "GET /furniture HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:18:35:11 +0000] \"GET /furniture HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T18:35:15.767Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 
+[debug] [2022-10-20T18:35:15.769Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T18:35:15.769Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T18:35:15.770Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-20T18:35:15.770Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 404
+[debug] [2022-10-20T18:35:15.771Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:18:35:15 +0000] "GET /furniture HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:18:35:15 +0000] \"GET /furniture HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-20T18:38:38.950Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T18:38:39.955Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T18:38:41.080Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T18:38:41.080Z] Building nodejs source
+[debug] [2022-10-20T18:38:41.080Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T18:38:41.080Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T18:38:41.181Z] Serving at port 9005
+
+[debug] [2022-10-20T18:38:41.187Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module
+[debug] [2022-10-20T18:38:41.187Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Cannot use import statement ou ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Cannot use import statement ou ... \n                                         ^"}
+[debug] [2022-10-20T18:38:41.189Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module"}}

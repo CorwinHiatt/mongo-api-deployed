@@ -4,6 +4,9 @@ import cors from 'cors'
 
 const app = express()
 app.use(cors())
+app.use(express.json())
+
+app.get('/fruniture', (req, res) => res.send(' comming soon...'))
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions

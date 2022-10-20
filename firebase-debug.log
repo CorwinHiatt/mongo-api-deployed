@@ -335,3 +335,651 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-10-20T19:56:43.590Z] shutdown requested via /__/quitquitquit
 
 [info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T19:58:38.854Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T19:58:39.858Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T19:58:40.666Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T19:58:40.666Z] Building nodejs source
+[debug] [2022-10-20T19:58:40.666Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T19:58:40.667Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T19:58:40.764Z] Serving at port 9005
+
+[debug] [2022-10-20T19:58:40.953Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T19:58:40.955Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] [hosting] Rewriting /furniture/_id635167e0e256e7e535a47d0 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:00:50.024Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/_id635167e0e256e7e535a47d0 
+[debug] [2022-10-20T20:00:50.024Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/_id635167e0e256e7e535a47d0 [stream]
+[debug] [2022-10-20T20:00:50.026Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:00:50.027Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:00:50.027Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture/_id635167e0e256e7e535a47d0 --> us-central1-api
+[debug] [2022-10-20T20:00:50.028Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:00:50.028Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/_id635167e0e256e7e535a47d0, mapping to path=/furniture/_id635167e0e256e7e535a47d0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/_id635167e0e256e7e535a47d0, mapping to path=/furniture/_id635167e0e256e7e535a47d0"}}
+[debug] [2022-10-20T20:00:50.028Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-10-20T20:00:50.038Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-20T20:00:50.039Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-20T20:00:50.595Z] [runtime-status] [24983] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:00:50.596Z] [runtime-status] [24983] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:00:50.596Z] [runtime-status] [24983] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-20T20:00:50.596Z] [runtime-status] [24983] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:00:50.615Z] [runtime-status] [24983] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-20T20:00:50.615Z] [runtime-status] [24983] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:00:50.615Z] [runtime-status] [24983] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:00:50.616Z] [runtime-status] [24983] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:00:50.616Z] [runtime-status] [24983] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:00:50.617Z] [runtime-status] [24983] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:00:50.794Z] [runtime-status] [24983] Functions runtime initialized. {"cwd":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Functions runtime initialized. {\"cwd\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-10-20T20:00:50.794Z] [runtime-status] [24983] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_73c3988f0d40c28d.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [24983] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_73c3988f0d40c28d.sock"}}
+[debug] [2022-10-20T20:00:50.857Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:00:50.857Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:00:50.866Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: IDLE"}}
+[debug] [2022-10-20T20:00:50.866Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.245791ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.245791ms"}}
+[debug] [2022-10-20T20:00:50.866Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/_id635167e0e256e7e535a47d0 404
+[debug] [2022-10-20T20:00:50.866Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/_id635167e0e256e7e535a47d0 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:00:50 +0000] "PATCH /furniture/_id635167e0e256e7e535a47d0 HTTP/1.1" 404 177 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:00:50 +0000] \"PATCH /furniture/_id635167e0e256e7e535a47d0 HTTP/1.1\" 404 177 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d0 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:01:24.026Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 
+[debug] [2022-10-20T20:01:24.026Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[debug] [2022-10-20T20:01:24.029Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:01:24.029Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:01:24.030Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 --> us-central1-api
+[debug] [2022-10-20T20:01:24.031Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:01:24.031Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0"}}
+[debug] [2022-10-20T20:01:24.031Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:01:24.032Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:01:24.037Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: IDLE"}}
+[debug] [2022-10-20T20:01:24.038Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.239834ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.239834ms"}}
+[debug] [2022-10-20T20:01:24.038Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 404
+[debug] [2022-10-20T20:01:24.039Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:01:24 +0000] "PATCH /furniture/635167e0e256e7e535a47d0 HTTP/1.1" 404 174 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:01:24 +0000] \"PATCH /furniture/635167e0e256e7e535a47d0 HTTP/1.1\" 404 174 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:01:39.788Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 
+[debug] [2022-10-20T20:01:39.790Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:01:39.790Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:01:39.790Z] Accepted request GET /mongodb-deploy1/us-central1/api/furniture --> us-central1-api
+[debug] [2022-10-20T20:01:39.791Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:01:39.791Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture, mapping to path=/furniture {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture, mapping to path=/furniture"}}
+[debug] [2022-10-20T20:01:39.791Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:01:39.791Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:01:40.844Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: IDLE"}}
+[debug] [2022-10-20T20:01:40.845Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1048.694542ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1048.694542ms"}}
+[debug] [2022-10-20T20:01:40.845Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 304
+[debug] [2022-10-20T20:01:40.845Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:01:40 +0000] "GET /furniture HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:01:40 +0000] \"GET /furniture HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:01:42.834Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 
+[debug] [2022-10-20T20:01:42.836Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:01:42.836Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:01:42.836Z] Accepted request GET /mongodb-deploy1/us-central1/api/furniture --> us-central1-api
+[debug] [2022-10-20T20:01:42.836Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:01:42.837Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture, mapping to path=/furniture {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture, mapping to path=/furniture"}}
+[debug] [2022-10-20T20:01:42.837Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:01:42.837Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:01:43.739Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: IDLE"}}
+[debug] [2022-10-20T20:01:43.739Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 900.133417ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 900.133417ms"}}
+[debug] [2022-10-20T20:01:43.741Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 304
+[debug] [2022-10-20T20:01:43.741Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:01:43 +0000] "GET /furniture HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:01:43 +0000] \"GET /furniture HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[debug] [2022-10-20T20:04:38.224Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T20:04:39.229Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T20:04:40.012Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T20:04:40.012Z] Building nodejs source
+[debug] [2022-10-20T20:04:40.012Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T20:04:40.013Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T20:04:40.108Z] Serving at port 9005
+
+[debug] [2022-10-20T20:04:40.289Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T20:04:40.292Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T20:04:40.295Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-10-20T20:04:40.295Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: FINISHING"}}
+[debug] [2022-10-20T20:04:40.297Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: exited"}}
+[debug] [2022-10-20T20:04:40.297Z] [worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-82262daf-f8b7-4743-8509-acd4f85540bc]: FINISHED"}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d0 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:04:51.772Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 
+[debug] [2022-10-20T20:04:51.772Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[debug] [2022-10-20T20:04:51.774Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:04:51.774Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:04:51.775Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 --> us-central1-api
+[debug] [2022-10-20T20:04:51.776Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:04:51.776Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0"}}
+[debug] [2022-10-20T20:04:51.776Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-10-20T20:04:51.787Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-20T20:04:51.788Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-20T20:04:52.347Z] [runtime-status] [25010] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:04:52.347Z] [runtime-status] [25010] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:04:52.347Z] [runtime-status] [25010] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-20T20:04:52.347Z] [runtime-status] [25010] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:04:52.370Z] [runtime-status] [25010] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-20T20:04:52.370Z] [runtime-status] [25010] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:04:52.370Z] [runtime-status] [25010] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:04:52.371Z] [runtime-status] [25010] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:04:52.371Z] [runtime-status] [25010] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:04:52.371Z] [runtime-status] [25010] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:04:52.546Z] [runtime-status] [25010] Functions runtime initialized. {"cwd":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Functions runtime initialized. {\"cwd\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-10-20T20:04:52.546Z] [runtime-status] [25010] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_a1249f361f96d5c0.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25010] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_a1249f361f96d5c0.sock"}}
+[debug] [2022-10-20T20:04:52.604Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:04:52.604Z] [worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:04:52.613Z] [worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: IDLE"}}
+[debug] [2022-10-20T20:04:52.613Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.23475ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.23475ms"}}
+[debug] [2022-10-20T20:04:52.613Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 404
+[debug] [2022-10-20T20:04:52.613Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:04:52 +0000] "PATCH /furniture/635167e0e256e7e535a47d0 HTTP/1.1" 404 174 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:04:52 +0000] \"PATCH /furniture/635167e0e256e7e535a47d0 HTTP/1.1\" 404 174 \"-\" \"PostmanRuntime/7.29.2\""}}
+[debug] [2022-10-20T20:05:29.002Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T20:05:30.006Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T20:05:30.619Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T20:05:30.619Z] Building nodejs source
+[debug] [2022-10-20T20:05:30.619Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T20:05:30.620Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T20:05:30.702Z] Serving at port 9005
+
+[debug] [2022-10-20T20:05:30.868Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T20:05:30.869Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T20:05:30.872Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-10-20T20:05:30.872Z] [worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: FINISHING"}}
+[debug] [2022-10-20T20:05:30.875Z] [worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: exited"}}
+[debug] [2022-10-20T20:05:30.875Z] [worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-24a01aac-e7ec-4f1c-8191-855e6ddaee12]: FINISHED"}}
+[debug] [2022-10-20T20:06:00.320Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T20:06:01.323Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T20:06:01.940Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T20:06:01.940Z] Building nodejs source
+[debug] [2022-10-20T20:06:01.940Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T20:06:01.940Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T20:06:02.022Z] Serving at port 9005
+
+[debug] [2022-10-20T20:06:02.199Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T20:06:02.201Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T20:09:04.750Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T20:09:05.755Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T20:09:06.420Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T20:09:06.420Z] Building nodejs source
+[debug] [2022-10-20T20:09:06.420Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T20:09:06.421Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T20:09:06.511Z] Serving at port 9005
+
+[debug] [2022-10-20T20:09:06.699Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T20:09:06.701Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d0 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:09:12.478Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 
+[debug] [2022-10-20T20:09:12.479Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[debug] [2022-10-20T20:09:12.480Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:09:12.481Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:09:12.481Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 --> us-central1-api
+[debug] [2022-10-20T20:09:12.481Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:09:12.482Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0"}}
+[debug] [2022-10-20T20:09:12.482Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-10-20T20:09:12.491Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-20T20:09:12.492Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-20T20:09:13.048Z] [runtime-status] [25050] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:09:13.049Z] [runtime-status] [25050] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:09:13.049Z] [runtime-status] [25050] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-20T20:09:13.049Z] [runtime-status] [25050] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:09:13.068Z] [runtime-status] [25050] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-20T20:09:13.068Z] [runtime-status] [25050] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:09:13.068Z] [runtime-status] [25050] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:09:13.068Z] [runtime-status] [25050] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:09:13.069Z] [runtime-status] [25050] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:09:13.069Z] [runtime-status] [25050] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:09:13.242Z] [runtime-status] [25050] Functions runtime initialized. {"cwd":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Functions runtime initialized. {\"cwd\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-10-20T20:09:13.242Z] [runtime-status] [25050] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_b6c21cf2c83d265e.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25050] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_b6c21cf2c83d265e.sock"}}
+[debug] [2022-10-20T20:09:13.308Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:09:13.308Z] [worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:09:13.317Z] [worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: IDLE"}}
+[debug] [2022-10-20T20:09:13.317Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.321417ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.321417ms"}}
+[debug] [2022-10-20T20:09:13.317Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 404
+[debug] [2022-10-20T20:09:13.317Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:09:13 +0000] "PATCH /furniture/635167e0e256e7e535a47d0 HTTP/1.1" 404 174 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:09:13 +0000] \"PATCH /furniture/635167e0e256e7e535a47d0 HTTP/1.1\" 404 174 \"-\" \"PostmanRuntime/7.29.2\""}}
+[debug] [2022-10-20T20:09:58.606Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T20:09:59.612Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T20:10:00.487Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T20:10:00.487Z] Building nodejs source
+[debug] [2022-10-20T20:10:00.487Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T20:10:00.488Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T20:10:00.577Z] Serving at port 9005
+
+[debug] [2022-10-20T20:10:00.768Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T20:10:00.770Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T20:10:00.773Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-10-20T20:10:00.773Z] [worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: FINISHING"}}
+[debug] [2022-10-20T20:10:00.775Z] [worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: exited"}}
+[debug] [2022-10-20T20:10:00.775Z] [worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-10efbf64-17de-4ef8-b72f-117cac37df3f]: FINISHED"}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d0 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:10:11.158Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 
+[debug] [2022-10-20T20:10:11.158Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[debug] [2022-10-20T20:10:11.159Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:10:11.160Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:10:11.160Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 --> us-central1-api
+[debug] [2022-10-20T20:10:11.161Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:10:11.161Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0"}}
+[debug] [2022-10-20T20:10:11.161Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-10-20T20:10:11.167Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-20T20:10:11.167Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-20T20:10:11.680Z] [runtime-status] [25070] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:10:11.681Z] [runtime-status] [25070] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:10:11.681Z] [runtime-status] [25070] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-20T20:10:11.681Z] [runtime-status] [25070] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:10:11.703Z] [runtime-status] [25070] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-20T20:10:11.703Z] [runtime-status] [25070] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:10:11.703Z] [runtime-status] [25070] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:10:11.703Z] [runtime-status] [25070] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:10:11.703Z] [runtime-status] [25070] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:10:11.704Z] [runtime-status] [25070] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:10:11.901Z] [runtime-status] [25070] Functions runtime initialized. {"cwd":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Functions runtime initialized. {\"cwd\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-10-20T20:10:11.901Z] [runtime-status] [25070] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_1bc3240610c0562f.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25070] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_1bc3240610c0562f.sock"}}
+[debug] [2022-10-20T20:10:11.984Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:10:11.984Z] [worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:10:11.994Z] [worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: IDLE"}}
+[debug] [2022-10-20T20:10:11.994Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.468541ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.468541ms"}}
+[debug] [2022-10-20T20:10:11.995Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 404
+[debug] [2022-10-20T20:10:11.995Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:10:11 +0000] "PATCH /furniture/635167e0e256e7e535a47d0 HTTP/1.1" 404 174 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:10:11 +0000] \"PATCH /furniture/635167e0e256e7e535a47d0 HTTP/1.1\" 404 174 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d0 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:10:35.366Z] >>> [apiv2][query] POST http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 
+[debug] [2022-10-20T20:10:35.366Z] >>> [apiv2][body] POST http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[debug] [2022-10-20T20:10:35.368Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:10:35.368Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:10:35.369Z] Accepted request POST /mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 --> us-central1-api
+[debug] [2022-10-20T20:10:35.370Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:10:35.370Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0, mapping to path=/furniture/635167e0e256e7e535a47d0"}}
+[debug] [2022-10-20T20:10:35.370Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:10:35.370Z] [worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:10:35.375Z] [worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: IDLE"}}
+[debug] [2022-10-20T20:10:35.375Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 0.727583ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 0.727583ms"}}
+[debug] [2022-10-20T20:10:35.375Z] <<< [apiv2][status] POST http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 404
+[debug] [2022-10-20T20:10:35.375Z] <<< [apiv2][body] POST http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:10:35 +0000] "POST /furniture/635167e0e256e7e535a47d0 HTTP/1.1" 404 173 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:10:35 +0000] \"POST /furniture/635167e0e256e7e535a47d0 HTTP/1.1\" 404 173 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d0 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:10:40.060Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d0 
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:11:09 +0000] "GET /furniture/635167e0e256e7e535a47d0 HTTP/1.1" - - "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:11:09 +0000] \"GET /furniture/635167e0e256e7e535a47d0 HTTP/1.1\" - - \"-\" \"PostmanRuntime/7.29.2\""}}
+[debug] [2022-10-20T20:11:27.837Z] File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/src/furniture.js changed, reloading triggers"}}
+[debug] [2022-10-20T20:11:28.843Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T20:11:29.712Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "type": "module",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T20:11:29.712Z] Building nodejs source
+[debug] [2022-10-20T20:11:29.712Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T20:11:29.713Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T20:11:29.809Z] Serving at port 9005
+
+[debug] [2022-10-20T20:11:30.004Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-20T20:11:30.006Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2022-10-20T20:11:30.008Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2022-10-20T20:11:30.009Z] [worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: FINISHING"}}
+[debug] [2022-10-20T20:11:30.012Z] [worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: exited"}}
+[debug] [2022-10-20T20:11:30.012Z] [worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-f2dd7d25-9b66-4983-8a30-4a0fbc1ee565]: FINISHED"}}
+[info] [hosting] Rewriting /furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:12:08.663Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 
+[debug] [2022-10-20T20:12:08.663Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[debug] [2022-10-20T20:12:08.664Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:12:08.665Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:12:08.665Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture --> us-central1-api
+[debug] [2022-10-20T20:12:08.665Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:12:08.666Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture, mapping to path=/furniture {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture, mapping to path=/furniture"}}
+[debug] [2022-10-20T20:12:08.666Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2022-10-20T20:12:08.675Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-10-20T20:12:08.675Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-10-20T20:12:09.237Z] [runtime-status] [25091] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:12:09.238Z] [runtime-status] [25091] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:12:09.238Z] [runtime-status] [25091] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-20T20:12:09.238Z] [runtime-status] [25091] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:12:09.257Z] [runtime-status] [25091] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-10-20T20:12:09.257Z] [runtime-status] [25091] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:12:09.257Z] [runtime-status] [25091] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:12:09.257Z] [runtime-status] [25091] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-20T20:12:09.257Z] [runtime-status] [25091] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-20T20:12:09.258Z] [runtime-status] [25091] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-20T20:12:09.433Z] [runtime-status] [25091] Functions runtime initialized. {"cwd":"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions","node_version":"16.17.1"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Functions runtime initialized. {\"cwd\":\"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions\",\"node_version\":\"16.17.1\"}"}}
+[debug] [2022-10-20T20:12:09.434Z] [runtime-status] [25091] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_753254d9a45a08d4.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [25091] Listening to port: /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/fire_emu_753254d9a45a08d4.sock"}}
+[debug] [2022-10-20T20:12:09.492Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:12:09.492Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:12:09.500Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE"}}
+[debug] [2022-10-20T20:12:09.500Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.188208ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.188208ms"}}
+[debug] [2022-10-20T20:12:09.501Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 404
+[debug] [2022-10-20T20:12:09.501Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:12:09 +0000] "PATCH /furniture HTTP/1.1" 404 150 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:12:09 +0000] \"PATCH /furniture HTTP/1.1\" 404 150 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d06 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:12:39.856Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 
+[debug] [2022-10-20T20:12:39.857Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:12:39.857Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:12:39.857Z] Accepted request GET /mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 --> us-central1-api
+[debug] [2022-10-20T20:12:39.858Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:12:39.859Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06, mapping to path=/furniture/635167e0e256e7e535a47d06 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06, mapping to path=/furniture/635167e0e256e7e535a47d06"}}
+[debug] [2022-10-20T20:12:39.859Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:12:39.859Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:12:39.865Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE"}}
+[debug] [2022-10-20T20:12:39.865Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 2.767334ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 2.767334ms"}}
+[debug] [2022-10-20T20:12:39.866Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 404
+[debug] [2022-10-20T20:12:39.866Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:12:39 +0000] "GET /furniture/635167e0e256e7e535a47d06 HTTP/1.1" 404 173 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:12:39 +0000] \"GET /furniture/635167e0e256e7e535a47d06 HTTP/1.1\" 404 173 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d06 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:12:53.146Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 
+[debug] [2022-10-20T20:12:53.146Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 [stream]
+[debug] [2022-10-20T20:12:53.148Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:12:53.149Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:12:53.149Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 --> us-central1-api
+[debug] [2022-10-20T20:12:53.150Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:12:53.150Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06, mapping to path=/furniture/635167e0e256e7e535a47d06 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06, mapping to path=/furniture/635167e0e256e7e535a47d06"}}
+[debug] [2022-10-20T20:12:53.150Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:12:53.150Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[info] i  functions: Finished "api" in 0.742916ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 0.742916ms"}}
+[debug] [2022-10-20T20:12:53.157Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE"}}
+[debug] [2022-10-20T20:12:53.158Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-20T20:12:53.158Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 404
+[debug] [2022-10-20T20:12:53.158Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:12:53 +0000] "PATCH /furniture/635167e0e256e7e535a47d06 HTTP/1.1" 404 175 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:12:53 +0000] \"PATCH /furniture/635167e0e256e7e535a47d06 HTTP/1.1\" 404 175 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d06 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:13:05.032Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 
+[debug] [2022-10-20T20:13:05.032Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 [stream]
+[debug] [2022-10-20T20:13:05.035Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:13:05.035Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:13:05.035Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 --> us-central1-api
+[debug] [2022-10-20T20:13:05.036Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:13:05.036Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06, mapping to path=/furniture/635167e0e256e7e535a47d06 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06, mapping to path=/furniture/635167e0e256e7e535a47d06"}}
+[debug] [2022-10-20T20:13:05.036Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:13:05.037Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:13:05.041Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE"}}
+[debug] [2022-10-20T20:13:05.042Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.962208ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.962208ms"}}
+[debug] [2022-10-20T20:13:05.045Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 404
+[debug] [2022-10-20T20:13:05.045Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:13:05 +0000] "PATCH /furniture/635167e0e256e7e535a47d06 HTTP/1.1" 404 175 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:13:05 +0000] \"PATCH /furniture/635167e0e256e7e535a47d06 HTTP/1.1\" 404 175 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /furniture/635167e0e256e7e535a47d06 to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:13:53.040Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 
+[debug] [2022-10-20T20:13:53.041Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:13:53.041Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:13:53.041Z] Accepted request GET /mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 --> us-central1-api
+[debug] [2022-10-20T20:13:53.042Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:13:53.042Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06, mapping to path=/furniture/635167e0e256e7e535a47d06 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06, mapping to path=/furniture/635167e0e256e7e535a47d06"}}
+[debug] [2022-10-20T20:13:53.042Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:13:53.042Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:13:53.045Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE"}}
+[debug] [2022-10-20T20:13:53.045Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 0.814042ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 0.814042ms"}}
+[debug] [2022-10-20T20:13:53.046Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 404
+[debug] [2022-10-20T20:13:53.046Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/635167e0e256e7e535a47d06 [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:13:53 +0000] "GET /furniture/635167e0e256e7e535a47d06 HTTP/1.1" 404 173 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:13:53 +0000] \"GET /furniture/635167e0e256e7e535a47d06 HTTP/1.1\" 404 173 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:13:58.740Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 
+[debug] [2022-10-20T20:13:58.741Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:13:58.741Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:13:58.741Z] Accepted request GET /mongodb-deploy1/us-central1/api/furniture --> us-central1-api
+[debug] [2022-10-20T20:13:58.743Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:13:58.743Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture, mapping to path=/furniture {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture, mapping to path=/furniture"}}
+[debug] [2022-10-20T20:13:58.743Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:13:58.743Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:13:59.713Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE"}}
+[debug] [2022-10-20T20:13:59.713Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 967.640042ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 967.640042ms"}}
+[debug] [2022-10-20T20:13:59.714Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 200
+[debug] [2022-10-20T20:13:59.715Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:13:59 +0000] "GET /furniture HTTP/1.1" 200 471 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:13:59 +0000] \"GET /furniture HTTP/1.1\" 200 471 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /furniture/6351a2f025ae7aed4642c33e to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:14:13.801Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e 
+[debug] [2022-10-20T20:14:13.801Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e [stream]
+[debug] [2022-10-20T20:14:13.802Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:14:13.803Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:14:13.803Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e --> us-central1-api
+[debug] [2022-10-20T20:14:13.804Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:14:13.804Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e, mapping to path=/furniture/6351a2f025ae7aed4642c33e {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e, mapping to path=/furniture/6351a2f025ae7aed4642c33e"}}
+[debug] [2022-10-20T20:14:13.804Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:14:13.805Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:14:13.809Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE"}}
+[debug] [2022-10-20T20:14:13.809Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 1.465084ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 1.465084ms"}}
+[debug] [2022-10-20T20:14:13.810Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e 404
+[debug] [2022-10-20T20:14:13.810Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:14:13 +0000] "PATCH /furniture/6351a2f025ae7aed4642c33e HTTP/1.1" 404 175 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:14:13 +0000] \"PATCH /furniture/6351a2f025ae7aed4642c33e HTTP/1.1\" 404 175 \"-\" \"PostmanRuntime/7.29.2\""}}
+[info] [hosting] Rewriting /furniture/6351a2f025ae7aed4642c33e to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T20:14:15.278Z] >>> [apiv2][query] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e 
+[debug] [2022-10-20T20:14:15.278Z] >>> [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e [stream]
+[debug] [2022-10-20T20:14:15.279Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T20:14:15.279Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T20:14:15.279Z] Accepted request PATCH /mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e --> us-central1-api
+[debug] [2022-10-20T20:14:15.280Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-20T20:14:15.280Z] [functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e, mapping to path=/furniture/6351a2f025ae7aed4642c33e {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e, mapping to path=/furniture/6351a2f025ae7aed4642c33e"}}
+[debug] [2022-10-20T20:14:15.280Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[debug] [2022-10-20T20:14:15.280Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: BUSY"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-10-20T20:14:15.282Z] [worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-2e112e29-53c1-49b7-8e5a-022c6bf40b6e]: IDLE"}}
+[debug] [2022-10-20T20:14:15.282Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "api" in 0.784375ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in 0.784375ms"}}
+[debug] [2022-10-20T20:14:15.283Z] <<< [apiv2][status] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e 404
+[debug] [2022-10-20T20:14:15.283Z] <<< [apiv2][body] PATCH http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture/6351a2f025ae7aed4642c33e [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:20:14:15 +0000] "PATCH /furniture/6351a2f025ae7aed4642c33e HTTP/1.1" 404 175 "-" "PostmanRuntime/7.29.2" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:20:14:15 +0000] \"PATCH /furniture/6351a2f025ae7aed4642c33e HTTP/1.1\" 404 175 \"-\" \"PostmanRuntime/7.29.2\""}}

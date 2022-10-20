@@ -1,0 +1,127 @@
+[debug] [2022-10-20T18:28:42.585Z] ----------------------------------------------------------------------
+[debug] [2022-10-20T18:28:42.586Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-10-20T18:28:42.586Z] CLI Version:   11.15.0
+[debug] [2022-10-20T18:28:42.586Z] Platform:      darwin
+[debug] [2022-10-20T18:28:42.586Z] Node Version:  v16.17.1
+[debug] [2022-10-20T18:28:42.590Z] Time:          Thu Oct 20 2022 14:28:42 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-10-20T18:28:42.590Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-20T18:28:42.621Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-20T18:28:42.621Z] > authorizing via signed-in user (corwinhiatt2772@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2022-10-20T18:28:42.787Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2022-10-20T18:28:42.787Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-20T18:28:42.787Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-10-20T18:28:42.791Z] [hub] writing locator at /var/folders/sq/g4p573_s2mngllp5yfmx8nzr0000gn/T/hub-mongodb-deploy1.json
+[debug] [2022-10-20T18:28:42.866Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-20T18:28:42.866Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-20T18:28:42.867Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-10-20T18:28:42.871Z] defaultcredentials: writing to file /Users/corwinhiatt/.config/firebase/corwinhiatt2772_gmail_com_application_default_credentials.json
+[debug] [2022-10-20T18:28:42.876Z] Setting GAC to /Users/corwinhiatt/.config/firebase/corwinhiatt2772_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/corwinhiatt/.config/firebase/corwinhiatt2772_gmail_com_application_default_credentials.json"}}
+[debug] [2022-10-20T18:28:42.877Z] > refreshing access token with scopes: []
+[debug] [2022-10-20T18:28:42.878Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-20T18:28:42.878Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-20T18:28:43.165Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-10-20T18:28:43.165Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-20T18:28:43.211Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mongodb-deploy1/adminSdkConfig [none]
+[debug] [2022-10-20T18:28:43.811Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mongodb-deploy1/adminSdkConfig 200
+[debug] [2022-10-20T18:28:43.812Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mongodb-deploy1/adminSdkConfig {"projectId":"mongodb-deploy1","storageBucket":"mongodb-deploy1.appspot.com"}
+[debug] [2022-10-20T18:28:43.843Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mongodb-deploy1/sites 
+[debug] [2022-10-20T18:28:44.323Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mongodb-deploy1/sites 200
+[debug] [2022-10-20T18:28:44.323Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mongodb-deploy1/sites {"sites":[{"name":"projects/mongodb-deploy1/sites/mongodb-deploy1","defaultUrl":"https://mongodb-deploy1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-10-20T18:28:44.324Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mongodb-deploy1/webApps/-/config [none]
+[debug] [2022-10-20T18:28:44.883Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mongodb-deploy1/webApps/-/config 200
+[debug] [2022-10-20T18:28:44.883Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mongodb-deploy1/webApps/-/config {"projectId":"mongodb-deploy1","storageBucket":"mongodb-deploy1.appspot.com","apiKey":"AIzaSyB7VwlfYA8x9lXlcSWurPGTPEU4E2YLMHQ","authDomain":"mongodb-deploy1.firebaseapp.com","messagingSenderId":"714324263259"}
+[debug] [2022-10-20T18:28:44.908Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mongodb-deploy1 [none]
+[debug] [2022-10-20T18:28:45.138Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mongodb-deploy1 200
+[debug] [2022-10-20T18:28:45.138Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mongodb-deploy1 {"projectId":"mongodb-deploy1","projectNumber":"714324263259","displayName":"mongodb-deploy1","name":"projects/mongodb-deploy1","resources":{"hostingSite":"mongodb-deploy1"},"state":"ACTIVE","etag":"1_8dc5cca7-6d5d-4a4b-986d-321df3baeda2"}
+[info] i  hosting[mongodb-deploy1]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[mongodb-deploy1]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[debug] [2022-10-20T18:28:45.194Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-20T18:28:45.194Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-20T18:28:45.194Z] Starting Emulator UI with command {"binary":"node","args":["/Users/corwinhiatt/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/corwinhiatt/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-20T18:28:45.259Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-10-20T18:28:45.259Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/corwinhiatt/bocacode/express/mongodb-deploy/functions\" for Cloud Functions..."}}
+[debug] [2022-10-20T18:28:45.463Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-20T18:28:46.155Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy",
+    "logs": "firebase functions:log",
+    "emulators": "firebase emulators"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mongodb": "^4.11.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-20T18:28:46.155Z] Building nodejs source
+[debug] [2022-10-20T18:28:46.155Z] Analyzing nodejs backend spec
+[debug] [2022-10-20T18:28:46.156Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-20T18:28:46.251Z] Serving at port 9005
+
+[debug] [2022-10-20T18:28:46.258Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module
+[debug] [2022-10-20T18:28:46.260Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Cannot use import statement ou ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Cannot use import statement ou ... \n                                         ^"}
+[debug] [2022-10-20T18:28:46.261Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Cannot use import statement outside a module"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5002 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] [hosting] Rewriting /furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T18:28:52.709Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 
+[debug] [2022-10-20T18:28:52.714Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T18:28:52.715Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T18:28:52.718Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-20T18:28:52.719Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 404
+[debug] [2022-10-20T18:28:52.720Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:18:28:52 +0000] "GET /furniture HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:18:28:52 +0000] \"GET /furniture HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
+[info] [hosting] Rewriting /furniture to http://127.0.0.1:5001/mongodb-deploy1/us-central1/api for local Function us-central1/api
+[debug] [2022-10-20T18:28:57.547Z] >>> [apiv2][query] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 
+[debug] [2022-10-20T18:28:57.550Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-20T18:28:57.551Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-20T18:28:57.552Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-10-20T18:28:57.552Z] <<< [apiv2][status] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture 404
+[debug] [2022-10-20T18:28:57.552Z] <<< [apiv2][body] GET http://127.0.0.1:5001/mongodb-deploy1/us-central1/api/furniture [stream]
+[info] i  hosting: 127.0.0.1 - - [20/Oct/2022:18:28:57 +0000] "GET /furniture HTTP/1.1" 404 62 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [20/Oct/2022:18:28:57 +0000] \"GET /furniture HTTP/1.1\" 404 62 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36\""}}
